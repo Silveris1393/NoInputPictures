@@ -85,7 +85,7 @@ class SlideshowApp:
 # -----------------------
 if __name__ == "__main__":
     # Set your desired folder of images
-    IMAGE_FOLDER = r"C:\Users\User\Desktop\fotkes\fotiko fotkes\svetainei"
+    IMAGE_FOLDER = r"C:\Users\User\Desktop\fotkes\fotiko fotkes\fotkes spausdinimui"
     
     # Idle threshold in seconds (5 minutes = 300 seconds)
     IDLE_THRESHOLD = 300  
