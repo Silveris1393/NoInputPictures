@@ -4,7 +4,7 @@ import tkinter as tk
 from PIL import Image, ImageTk
 from ctypes import Structure, windll, c_uint, sizeof, byref
 import sys
-import pyautogui
+#import pyautogui
 import random
 
 # -----------------------
@@ -78,8 +78,8 @@ class SlideshowApp:
         tk_image = ImageTk.PhotoImage(img)
         self.label.config(image=tk_image)
         self.label.image = tk_image  # Keep a reference
-        pyautogui.move(40, 0)  # Move mouse 1 pixel to the right
-        pyautogui.move(-1, 0)  # Move mouse 1 pixel back to the left
+      #  pyautogui.move(10, 10)  # Move mouse 1 pixel to the right
+      #  pyautogui.move(-50, 70)  # Move mouse 1 pixel back to the left
         # Schedule next random image
         self.root.after(self.display_time * 1000, self.show_random_image)
 
@@ -130,7 +130,7 @@ if __name__ == "__main__":
     IMAGE_FOLDER = r"C:\Users\User\Desktop\fotkes\fotiko fotkes"
     
     # Idle threshold in seconds (5 minutes = 300 seconds)
-    IDLE_THRESHOLD = 10  
+    IDLE_THRESHOLD = 240
 
     print("Monitoring idle time. Will start slideshow after 5 minutes of no activity.")
     while True:
